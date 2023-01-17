@@ -10,17 +10,17 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	use({
-		'rose-pine/neovim',
-		as = 'rose-pine',
-		config = function()
-			vim.cmd('colorscheme rose-pine')
-		end
-	})
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+        config = function()
+            vim.cmd('colorscheme rose-pine')
+        end
+    })
 
-	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
-	use 'ThePrimeagen/harpoon'
+    use 'ThePrimeagen/harpoon'
 
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -45,9 +45,9 @@ return require('packer').startup(function(use)
     }
 
     -- For RustRunnables nice telescope popup
-   use 'nvim-telescope/telescope-ui-select.nvim'
+    use 'nvim-telescope/telescope-ui-select.nvim'
 
-   -- Git tools
+    -- Git tools
     use 'tpope/vim-fugitive'
 
     -- File tree
@@ -64,4 +64,18 @@ return require('packer').startup(function(use)
 
     -- Comment code
     use 'numToStr/Comment.nvim'
+
+    -- Multi-cursor support
+    use 'mg979/vim-visual-multi'
+
+    -- Git niceties
+    use {
+        'tanvirtin/vgit.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim'
+        }
+    }
+
+    -- Copilot
+    use 'github/copilot.vim'
 end)
