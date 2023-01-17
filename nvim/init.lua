@@ -1,1 +1,1 @@
-require("lok52")
+require('lok52')
