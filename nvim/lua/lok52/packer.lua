@@ -44,7 +44,6 @@ return require('packer').startup(function(use)
         }
     }
 
-   use 'simrat39/rust-tools.nvim'
     -- For RustRunnables nice telescope popup
    use 'nvim-telescope/telescope-ui-select.nvim'
 
