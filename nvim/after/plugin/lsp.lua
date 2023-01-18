@@ -5,7 +5,6 @@ lsp.preset('recommended')
 lsp.ensure_installed({
   'tsserver',
   'sumneko_lua',
-  'rust_analyzer',
 })
 
 -- Fix Undefined global 'vim'
@@ -23,6 +22,7 @@ lsp.configure('sumneko_lua', {
       workspace = {
         -- Make the server aware of Neovim runtime files
         library = vim.api.nvim_get_runtime_file("", true),
+        checkThirdParty = false,
       },
       -- Do not send telemetry data containing a randomized but unique identifier
       telemetry = {

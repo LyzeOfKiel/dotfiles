@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "/Users/leonidtyurin/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  harpoon = {
-    loaded = true,
-    path = "/Users/leonidtyurin/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/ThePrimeagen/harpoon"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/leonidtyurin/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -179,6 +174,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/leonidtyurin/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
+  },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/leonidtyurin/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
   },
   ["telescope-ui-select.nvim"] = {
     loaded = true,

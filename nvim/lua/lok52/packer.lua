@@ -20,8 +20,6 @@ return require('packer').startup(function(use)
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
-    use 'ThePrimeagen/harpoon'
-
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
@@ -44,6 +42,8 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- Adds extra functionality over rust analyzer
+    use('simrat39/rust-tools.nvim')
     -- For RustRunnables nice telescope popup
     use 'nvim-telescope/telescope-ui-select.nvim'
 
